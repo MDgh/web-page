@@ -1,4 +1,14 @@
+body {
+  margin: 0;
+}
+
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.products-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

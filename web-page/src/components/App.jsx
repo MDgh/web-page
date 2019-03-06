@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CreateProducts from './CreateProducts';
+import Search from './Search';
 import '../style.css';
 
 class App extends Component {
@@ -23,13 +23,22 @@ class App extends Component {
       });
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    console.log(prevProps, prevState);
+    if (!this.state.data) {
+      console.log('data');
+    }
+  }
+
   hundlerChange = (data) => {
     this.setState({ data });
   }
 
   render() {
     return (
-      <CreateProducts data={this.state.data} />
+      <>
+        <Search data={this.state.data} />
+      </>
     );
   }
 }
