@@ -1,0 +1,13 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "rules": {
+        "no-console": "off",
+        "react/destructuring-assignment": ["enabled", "never"],
+        "func-names": ["error", "as-needed"]
+      }
+}

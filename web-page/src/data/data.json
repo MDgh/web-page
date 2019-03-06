@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Плюшевый Медведь \"Тедди\"",
+    "img": "bear-teddy.png",
+    "price": "25",
+    "currency": "Руб.",
+    "description": "",
+    "availability": "Под заказ"
+  },
+  {
+    "name": "Пасхальный заяц",
+    "img": "easter-bunny.png",
+    "price": "15",
+    "currency": "Руб.",
+    "description": "",
+    "availability": "В наличии"
+  },
+  {
+    "name": "Мягкий кролик",
+    "img": "rabbit.png",
+    "price": "29.60",
+    "currency": "Руб.",
+    "description": "",
+    "availability": "В наличии"
+  },
+  {
+    "name": "Пони",
+    "img": "pony.png",
+    "price": "21.40",
+    "currency": "Руб.",
+    "description": "",
+    "availability": "В наличии"
+  },
+  {
+    "name": "Рождественский Медведь",
+    "img": "bear-teddy-christmas.png",
+    "price": "21.40",
+    "currency": "Руб.",
+    "description": "",
+    "availability": "Под заказ"
+  },
+  {
+    "name": "Лягушонок \"Кофе Брейк\"",
+    "img": "frog-coffee-break.png",
+    "price": "19.80",
+    "currency": "Руб.",
+    "description": "",
+    "availability": "В наличии"
+  },
+  {
+    "name": "Плюшевый Медведь \"Байт\"",
+    "img": "bear-bayt.png",
+    "price": "21.00",
+    "currency": "Руб.",
+    "description": "",
+    "availability": "В наличии"
+  },
+  {
+    "name": "Северный Олень",
+    "img": "deer-christmas.png",
+    "price": "14.30",
+    "currency": "Руб.",
+    "description": "",
+    "availability": "Под заказ"
+  }
+]

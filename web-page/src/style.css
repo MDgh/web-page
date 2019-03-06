@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product-container{
+  max-width: 300px;
+  width: 100%;
+}
+
+.product-img {
+  width: 100px;
+  height: 120px;
+}
+
+.product-title {
+  margin-top: 15px;
+}
