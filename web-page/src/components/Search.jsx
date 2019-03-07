@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import SearchInput, { createFilter } from 'react-search-input';
-import imgPath from '../../constants';
-
-const KEYS_TO_FILTERS = ['name'];
+import Hundler from './Handler';
+import {
+  imgPath,
+  KEYS_TO_FILTERS
+} from '../constants';
 
 class Search extends Component {
   constructor(props) {
@@ -22,36 +24,38 @@ class Search extends Component {
     const { data } = this.props;
 
     if (data) {
-      console.log('data', data);
-      const filteredEmails = data
+      const filteredProducts = data
         .filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS));
-      console.log('filter', filteredEmails);
+
       return (
-        <>
-          <div className="wrapper">
+        <Fragment>
+          <header className="products-header">
+          <div className="products-header-container">
+            <h1 className="products-header-head">Интернет-магазин детских игрушек "Toys"</h1>
             <SearchInput className="search-input" onChange={this.searchUpdated} />
-            <div className="products-wrapper">
-              {filteredEmails.map(i => (
-                <div className="product-container">
+          </div>
+          </header>
+          <div className="wrapper">
+            <div className="products-wrapper"  onClick={Hundler}>
+              {filteredProducts.map(i => (
+                <div className="product-container" key={`${i.name}`}>
                   <figure>
                     <img className="product-img" src={`${imgPath}${i.img}`} alt={i.name} />
                     <b><figcaption className="product-title">{i.name}</figcaption></b>
                   </figure>
-                  <span>{`${i.price} ${i.currency}`}</span>
-                  <div>
-                    <p>{i.description}</p>
-                    <span>{i.availability}</span>
-                  </div>
+                  <span className="product-price">{`${i.price} ${i.currency}`}</span>
+                    <div className="hidden">
+                      <p className="product-description">{i.description}</p>
+                      <span className="product-availability">{i.availability}</span>
+                    </div>
                 </div>
               ))}
             </div>
           </div>
-        </>
+        </Fragment>
       );
     }
-    return (
-      <h1>He</h1>
-    );
+    return false;
   }
 }
 

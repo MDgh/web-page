@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import Search from './Search';
 import '../style.css';
+import './images/bear-bayt.png';
+import './images/bear-teddy-christmas.png';
+import './images/bear-teddy.png';
+import './images/deer-christmas.png';
+import './images/easter-bunny.png';
+import './images/frog-coffee-break.png';
+import './images/pony.png';
+import './images/rabbit.png';
 
 class App extends Component {
   constructor(props) {
@@ -24,7 +32,6 @@ class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(prevProps, prevState);
     if (!this.state.data) {
       console.log('data');
     }
